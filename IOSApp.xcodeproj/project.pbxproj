@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		10EA277325F3796200915ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EA277125F3796200915ED6 /* Main.storyboard */; };
 		10EA277525F3796300915ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10EA277425F3796300915ED6 /* Assets.xcassets */; };
 		10EA277825F3796300915ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10EA277625F3796300915ED6 /* LaunchScreen.storyboard */; };
+		10EA279825F37E4500915ED6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10EA279725F37E4500915ED6 /* GoogleService-Info.plist */; };
+		10F866E225F4FFEA00B79BCA /* AccountBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866DF25F4FFEA00B79BCA /* AccountBL.swift */; };
+		10F866E325F4FFEA00B79BCA /* CustomerBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866E125F4FFEA00B79BCA /* CustomerBL.swift */; };
+		10F866E425F4FFEA00B79BCA /* TestBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866E025F4FFEA00B79BCA /* TestBL.swift */; };
+		10F866E825F5000A00B79BCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866E625F5000900B79BCA /* LoginViewController.swift */; };
+		10F866EC25F5001F00B79BCA /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866EB25F5001F00B79BCA /* CreateAccountViewController.swift */; };
+		10F866EF25F5002400B79BCA /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866EE25F5002400B79BCA /* TestModel.swift */; };
+		10F866F825F5010300B79BCA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866F725F5010300B79BCA /* UserModel.swift */; };
+		10F866FC25F5053B00B79BCA /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F866FB25F5053B00B79BCA /* Validation.swift */; };
+		FBE08032101E3A20C0BA097E /* libPods-IOSApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65920FA131DADC68D7489073 /* libPods-IOSApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,19 @@
 		10EA277425F3796300915ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10EA277725F3796300915ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10EA277925F3796300915ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10EA279725F37E4500915ED6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10F866DF25F4FFEA00B79BCA /* AccountBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBL.swift; sourceTree = "<group>"; };
+		10F866E025F4FFEA00B79BCA /* TestBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBL.swift; sourceTree = "<group>"; };
+		10F866E125F4FFEA00B79BCA /* CustomerBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBL.swift; sourceTree = "<group>"; };
+		10F866E625F5000900B79BCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		10F866E725F5000A00B79BCA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		10F866EB25F5001F00B79BCA /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		10F866EE25F5002400B79BCA /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		10F866F725F5010300B79BCA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		10F866FB25F5053B00B79BCA /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		4C698CA2235A015CDBE86AE1 /* Pods-IOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSApp.debug.xcconfig"; path = "Target Support Files/Pods-IOSApp/Pods-IOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		65920FA131DADC68D7489073 /* libPods-IOSApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D038EEE4F45035CCA4E0CB26 /* Pods-IOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSApp.release.xcconfig"; path = "Target Support Files/Pods-IOSApp/Pods-IOSApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE08032101E3A20C0BA097E /* libPods-IOSApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +66,8 @@
 			children = (
 				10EA276A25F3796200915ED6 /* IOSApp */,
 				10EA276925F3796200915ED6 /* Products */,
+				F793B2D0B2101152E690A5AD /* Pods */,
+				17FFA854286E79CBF949104A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,42 @@
 		10EA276A25F3796200915ED6 /* IOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				10EA279725F37E4500915ED6 /* GoogleService-Info.plist */,
+				10F866EE25F5002400B79BCA /* TestModel.swift */,
+				10F866EB25F5001F00B79BCA /* CreateAccountViewController.swift */,
+				10F866E625F5000900B79BCA /* LoginViewController.swift */,
+				10F866E725F5000A00B79BCA /* LoginViewController.xib */,
+				10EA276F25F3796200915ED6 /* ViewController.swift */,
+				10F866DF25F4FFEA00B79BCA /* AccountBL.swift */,
+				10F866E125F4FFEA00B79BCA /* CustomerBL.swift */,
+				10F866E025F4FFEA00B79BCA /* TestBL.swift */,
 				10EA276B25F3796200915ED6 /* AppDelegate.swift */,
 				10EA276D25F3796200915ED6 /* SceneDelegate.swift */,
-				10EA276F25F3796200915ED6 /* ViewController.swift */,
 				10EA277125F3796200915ED6 /* Main.storyboard */,
 				10EA277425F3796300915ED6 /* Assets.xcassets */,
 				10EA277625F3796300915ED6 /* LaunchScreen.storyboard */,
 				10EA277925F3796300915ED6 /* Info.plist */,
+				10F866F725F5010300B79BCA /* UserModel.swift */,
+				10F866FB25F5053B00B79BCA /* Validation.swift */,
 			);
 			path = IOSApp;
+			sourceTree = "<group>";
+		};
+		17FFA854286E79CBF949104A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65920FA131DADC68D7489073 /* libPods-IOSApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F793B2D0B2101152E690A5AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C698CA2235A015CDBE86AE1 /* Pods-IOSApp.debug.xcconfig */,
+				D038EEE4F45035CCA4E0CB26 /* Pods-IOSApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10EA277C25F3796300915ED6 /* Build configuration list for PBXNativeTarget "IOSApp" */;
 			buildPhases = (
+				6FE97603F9C237E52160BE35 /* [CP] Check Pods Manifest.lock */,
 				10EA276425F3796200915ED6 /* Sources */,
 				10EA276525F3796200915ED6 /* Frameworks */,
 				10EA276625F3796200915ED6 /* Resources */,
+				0AF97493806AC545E0360372 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10EA277825F3796300915ED6 /* LaunchScreen.storyboard in Resources */,
+				10EA279825F37E4500915ED6 /* GoogleService-Info.plist in Resources */,
 				10EA277525F3796300915ED6 /* Assets.xcassets in Resources */,
 				10EA277325F3796200915ED6 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +188,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AF97493806AC545E0360372 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSApp/Pods-IOSApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSApp/Pods-IOSApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSApp/Pods-IOSApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE97603F9C237E52160BE35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10EA276425F3796200915ED6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F866E825F5000A00B79BCA /* LoginViewController.swift in Sources */,
+				10F866E325F4FFEA00B79BCA /* CustomerBL.swift in Sources */,
+				10F866FC25F5053B00B79BCA /* Validation.swift in Sources */,
 				10EA277025F3796200915ED6 /* ViewController.swift in Sources */,
 				10EA276C25F3796200915ED6 /* AppDelegate.swift in Sources */,
+				10F866E425F4FFEA00B79BCA /* TestBL.swift in Sources */,
+				10F866EC25F5001F00B79BCA /* CreateAccountViewController.swift in Sources */,
+				10F866EF25F5002400B79BCA /* TestModel.swift in Sources */,
 				10EA276E25F3796200915ED6 /* SceneDelegate.swift in Sources */,
+				10F866E225F4FFEA00B79BCA /* AccountBL.swift in Sources */,
+				10F866F825F5010300B79BCA /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +389,7 @@
 		};
 		10EA277D25F3796300915ED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C698CA2235A015CDBE86AE1 /* Pods-IOSApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +400,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = costa.IOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = costa.IOSAppNIBMCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +409,7 @@
 		};
 		10EA277E25F3796300915ED6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D038EEE4F45035CCA4E0CB26 /* Pods-IOSApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,7 +420,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = costa.IOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = costa.IOSAppNIBMCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
