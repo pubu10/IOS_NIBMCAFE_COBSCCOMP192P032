@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10197BB825F6496100432A17 /* LocationAccssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10197BB725F6496100432A17 /* LocationAccssViewController.swift */; };
+		10197BBB25F661D500432A17 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10197BBA25F661D500432A17 /* TabBarViewController.swift */; };
 		10EA276C25F3796200915ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA276B25F3796200915ED6 /* AppDelegate.swift */; };
 		10EA276E25F3796200915ED6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA276D25F3796200915ED6 /* SceneDelegate.swift */; };
 		10EA277025F3796200915ED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EA276F25F3796200915ED6 /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10197BB725F6496100432A17 /* LocationAccssViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccssViewController.swift; sourceTree = "<group>"; };
+		10197BBA25F661D500432A17 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		10EA276825F3796200915ED6 /* IOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EA276B25F3796200915ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10EA276D25F3796200915ED6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				10EA277925F3796300915ED6 /* Info.plist */,
 				10F866F725F5010300B79BCA /* UserModel.swift */,
 				10F866FB25F5053B00B79BCA /* Validation.swift */,
+				10197BB725F6496100432A17 /* LocationAccssViewController.swift */,
+				10197BBA25F661D500432A17 /* TabBarViewController.swift */,
 			);
 			path = IOSApp;
 			sourceTree = "<group>";
@@ -245,7 +251,9 @@
 				10F866EF25F5002400B79BCA /* TestModel.swift in Sources */,
 				10EA276E25F3796200915ED6 /* SceneDelegate.swift in Sources */,
 				10F866E225F4FFEA00B79BCA /* AccountBL.swift in Sources */,
+				10197BBB25F661D500432A17 /* TabBarViewController.swift in Sources */,
 				10F866F825F5010300B79BCA /* UserModel.swift in Sources */,
+				10197BB825F6496100432A17 /* LocationAccssViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
