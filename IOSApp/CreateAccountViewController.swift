@@ -68,7 +68,6 @@ class CreateAccountViewController: UIViewController {
         oUser.address = txtAddress.text!
         msg = oCustomerBL.CreateCustomerAccount(oModel: oUser) ? "Registration Complete" : "Try Again"
         
-        print(msg)
         let alert = UIAlertController(title: "Alert", message: msg, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)

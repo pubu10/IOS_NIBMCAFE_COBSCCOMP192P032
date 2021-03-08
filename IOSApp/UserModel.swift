@@ -10,7 +10,7 @@ import UIKit
 class UserModel: NSObject {
 
     public var Collection :String = "CustomerModel" // Database Collection name
-    public var CustomerId: Int = 100
+    public var CustomerId: String = ""
     public var Name: String = ""
     public var Address: String = ""
     public var Email: String = ""
@@ -32,12 +32,12 @@ class UserModel: NSObject {
         return self.Collection
     }
 
-    public var customerId: Int {
+    public var customerId: String {
         get {
             return self.CustomerId;
         }
         set {
-            if  newValue > 0 {
+            if  newValue != "" {
                 //fatalError("invalid value for CustomerId")
             } else {
                 self.CustomerId = newValue
