@@ -130,6 +130,10 @@
                             <constraint firstItem="F5b-Ny-Sgf" firstAttribute="centerX" secondItem="SoL-RJ-X0H" secondAttribute="centerX" id="zB7-pl-Qyc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="0uB-gM-Pey" id="uIi-pU-XSz"/>
+                        <outlet property="txtPassword" destination="9Te-0F-aTN" id="LSl-zx-HSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

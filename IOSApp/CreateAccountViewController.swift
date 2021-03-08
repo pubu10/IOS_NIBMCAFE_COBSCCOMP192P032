@@ -66,7 +66,7 @@ class CreateAccountViewController: UIViewController {
         oUser.Email = txtEmail.text!
         oUser.Password = txtPassword.text!
         oUser.address = txtAddress.text!
-        msg = oCustomerBL.CreateCustomerAccount(oModel: oUser) ? "Registration Complete" : "Try Again"
+        msg = oCustomerBL.CreateUserInFirbase(oModel: oUser) ? "Registration Complete" : "Try Again"
         
         let alert = UIAlertController(title: "Alert", message: msg, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))

@@ -5,7 +5,7 @@
 //  Created by pubudu tharuka on 2021-03-07.
 //
 import Firebase
-import UIKit
+//import UIKit
 
 public class CustomerBL: NSObject {
     
@@ -19,36 +19,67 @@ public class CustomerBL: NSObject {
      func CreateCustomerAccount(oModel : UserModel) -> Bool {
         var chk : Bool = false
         
-        oModel.CustomerId = self.CreateUserInFirbase(email: oModel.email, password: oModel.Password)
-        
         if(oModel.CustomerId != "")
-        {
-            db?.collection(oModel.Collection).document(oModel.CustomerId).setData(oModel.dictionaryRepresentation) { err in
-                if ( err == nil )
-                {
-                    chk = true
+            {
+                self.db?.collection(oModel.Collection).document(oModel.CustomerId).setData(oModel.dictionaryRepresentation) { err in
+                    if ( err == nil )
+                    {
+                        chk = true
+                    }
                 }
             }
-        }
-       
        return chk;
     }
     
-    func CreateUserInFirbase( email: String,password : String) -> String {
+    func CreateUserInFirbase( oModel : UserModel) -> Bool {
         
-        var userID : String = ""
+        var Check : Bool = false
         
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-          
-            if(authResult != nil)
-            {
-                userID = (authResult?.user.uid)! as String
-            }
+        Auth.auth().createUser(withEmail: oModel.email, password: oModel.password) { authResult, error in
+                
+                if(authResult != nil)
+                {
+                    oModel.CustomerId = (authResult?.user.uid)! as String
+                    Check = self.CreateCustomerAccount(oModel: oModel)
+                }
         }
-        return userID
-       
+        return Check
+        
     }
     
-   
+    func SignIn(Email : String,Password : String) -> Bool{
+        var Check : Bool = false
+        //let group = DispatchGroup.init()
+       // group.enter()
+        
+        
+        Auth.auth().signIn(withEmail: Email, password: Password) { (authResult, error) in
+            
+                  if let error = error as NSError? {
+                  switch AuthErrorCode(rawValue: error.code) {
+                  case .operationNotAllowed:
+                      print( "Email is not allowed..!")
+                      break
+                  case .userDisabled:
+                    print( "The user account has been disabled by an administrator.")
+                  break
+                  case .invalidEmail:
+                    print( "The email address is badly formatted.")
+                  break
+                  case .wrongPassword:
+                    print( "The user name or password is invalid ")
+                    break
+                  default:
+                    print( "Error")
+                  }
+                } else {
+                    print("User signs in successfully..!")
+                    Check = true
+                }
+            
+          }
+        
+        return Check
+    }
     
 }
