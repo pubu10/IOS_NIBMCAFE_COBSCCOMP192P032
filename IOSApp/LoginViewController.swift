@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
             //let oUser =  CustomerBL()
             //check = oUser.SignIn(Email: txtEmail.text!, Password: txtPassword.text!)
             
+            var status : Bool = false
             var msg : String = ""
             Auth.auth().signIn(withEmail: txtEmail.text!, password: txtPassword.text!) { (authResult, error) in
                 
@@ -54,20 +55,20 @@ class LoginViewController: UIViewController {
                       }
                     } else {
                         msg = "User signs in successfully..!"
+                        status = true
                     }
                 
-                let alert = UIAlertController(title: "Alert", message: msg, preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-                
-                if(msg == "")
+                if(status)
                 {
-                    
-                    
+                    let vc = (self.storyboard?.instantiateViewController(identifier: "LocationView"))! as LocationAccssViewController
+                   self.present(vc,animated: true,completion: nil)
                 }
                 else
                 {
-                   
+                    let alert = UIAlertController(title: "Alert", message: msg, preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    
                     
                 }
                 
